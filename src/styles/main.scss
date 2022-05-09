@@ -89,7 +89,22 @@ $heigth: $width / 16 * 9;
         padding: 0 5px;
     }
 }
-
+.active{
+    border-radius: 40px;
+        background-color: darken($color: lightgreen, $amount: 20%);
+        color: #fff;
+}
 .unvisible{
     display: none;
+}
+.area{
+    width: 98%;
+    height:98%;
+    border: none;   
+    outline: none;
+    resize: none;
+    border-radius: 15px;
+    background-color:#fafafa;
+    font-size: 24px;
+    
 }
