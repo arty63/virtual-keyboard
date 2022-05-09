@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular);
+body {
+  background-color: #ccc;
+  font-family: 'Montserrat';
+  text-align: center; }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%; }
+
+.frame {
+  margin: 20px auto 90px;
+  width: 640px;
+  height: 360px;
+  background-color: #fafafa;
+  border: 2px solid black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  .frame ::after {
+    content: '';
+    width: 100%;
+    height: 15%;
+    background-color: #b7d1c8;
+    position: absolute;
+    bottom: -15%;
+    left: -2px;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+
+.board {
+  margin-top: 40px;
+  width: 640px;
+  border-radius: 15px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  padding: 15px; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px; }
+
+.btn {
+  border-radius: 5px;
+  line-height: 200%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px; }
+  .btn:hover {
+    background-color: lightgreen;
+    cursor: pointer; }
+  .btn:active {
+    border-radius: 40px;
+    background-color: #38e038;
+    color: #fff; }

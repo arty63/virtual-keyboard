@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular);
+body{
+    background-color: #ccc;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+$max-w: 1280px;
+$width: $max-w / 1.5;
+$heigth: $width / 16 * 9; 
+.wrapper{
+    max-width: $max-w;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.frame{
+    margin: 20px auto 90px;
+    width: $width;
+    height: $heigth;
+    background-color: #fafafa;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    ::after{
+        content: '';
+        width: 100%;
+        height: 15%;
+        background-color: #b7d1c8;
+        position: absolute;
+        bottom: -15%;
+        left: -2px;
+        border: 2px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+.board{
+    margin-top: 40px;
+    width: $width;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    // padding: 10px 10px 5px;
+    // &:last-child{
+    //     padding: 10px 10px;
+    // }
+    
+}
+.btn{
+    
+    min-width: 25px;
+    border-radius: 5px;
+    line-height: 175%;
+    flex: 1 1 auto;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 20px;
+    &:hover{
+        background-color: lightgreen;
+        cursor: pointer;
+    }
+    &:active{
+        border-radius: 40px;
+        background-color: darken($color: lightgreen, $amount: 20%);
+        color: #fff;
+    }
+    &:nth-child(n){
+        flex: 1 0 auto;
+        padding: 0 5px;
+    }
+}
+
+.unvisible{
+    display: none;
+}
